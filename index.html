@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .nopadding{
+            padding:0px;
+        }
+        h1{
+            color:blue;
+        }
+        .down{
+            padding-bottom: 3px;
+        }
+        .container{
+            box-shadow: 3px 3px 3px 3px grey;
+            margin: 3px 3px 3px 3px;
+        }
+        </style>
+
+        <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </head>
+        <h1 style="text-align:center">CALCULATOR</h1>
+        <body>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <input type="text" class="form-control" id="calculator">
+              </div>
+          </div>
+         <div class="row down">
+             <div class="col-lg-3">
+                 <button class="btn btn-primary btn-block" onclick="input('1')">1</button>
+             </div>
+             <div class="col-lg-3">
+                <button class="btn btn-primary btn-block" onclick="input('2')">2</button>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-primary btn-block"onclick="input('3')" >3</button>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-warning btn-block" onclick="input('+')">+</button>
+            </div>
+         </div>
+         <div class="row down">
+            <div class="col-lg-3">
+                <button class="btn btn-primary btn-block" onclick="input('4')">4</button>
+            </div>
+            <div class="col-lg-3">
+               <button class="btn btn-primary btn-block" onclick="input('5')">5</button>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn btn-primary btn-block" onclick="input('6')">6</button>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn btn-warning btn-block" onclick="input('-')">-</button>
+           </div>
+        </div>
+        <div class="row down">
+            <div class="col-lg-3">
+                <button class="btn btn-primary btn-block" onclick="input('7')">7</button>
+            </div>
+            <div class="col-lg-3">
+               <button class="btn btn-primary btn-block" onclick="input('8')">8</button>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn btn-primary btn-block" onclick="input('9')">9</button>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn btn-warning btn-block" onclick="input('X')">X</button>
+           </div>
+        </div>
+        <div class="row down">
+            <div class="col-lg-3">
+                <button class="btn btn-primary btn-block" onclick="input('0')">0</button>
+            </div>
+            <div class="col-lg-3">
+               <button class="btn btn-primary btn-block" onclick="input('.')">.<button>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn btn-primary btn-block" onclick="result()">=</button>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn btn-warning btn-block" onclick="input('/')">/</button>
+           </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-danger btn-block" onclick="clear()">C</button>
+        </div>
+      </div>
+ 
+
+       <script src="calculator.js"></script>
+        </body>
+</html>
